@@ -1,8 +1,54 @@
 @import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
-
 .container {
+  background-color: lightslategray;
+  margin-top: 60px;
 
-  background-color: red;
+  .timezone-calc-container {
+    padding: 15px 0;
+
+    h4 {
+      color: darkslategray;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form#timezone-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .convert-to-text {
+        color: darkslategray;
+      }
+
+      select, input {
+        margin-bottom: 15px;
+        width: 200px;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        padding: 5px;
+      }
+
+      input[type=submit] {
+        background: darkslategray;
+        color: white;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .timezone-results {
+      display: none;
+      padding: 30px 5px;
+      color: darkslategray;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
 }
 

@@ -5731,6 +5731,41 @@ button.close {
     display: none !important; } }
 
 .container {
-  background-color: red; }
+  background-color: lightslategray;
+  margin-top: 60px; }
+  .container .timezone-calc-container {
+    padding: 15px 0; }
+    .container .timezone-calc-container h4 {
+      color: darkslategray;
+      text-align: center;
+      margin-bottom: 20px; }
+    .container .timezone-calc-container form#timezone-form {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-align: center;
+      align-items: center; }
+      .container .timezone-calc-container form#timezone-form .convert-to-text {
+        color: darkslategray; }
+      .container .timezone-calc-container form#timezone-form select, .container .timezone-calc-container form#timezone-form input {
+        margin-bottom: 15px;
+        width: 200px;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        padding: 5px; }
+      .container .timezone-calc-container form#timezone-form input[type=submit] {
+        background: darkslategray;
+        color: white; }
+        .container .timezone-calc-container form#timezone-form input[type=submit]:focus {
+          outline: none; }
+    .container .timezone-calc-container .timezone-results {
+      display: none;
+      padding: 30px 5px;
+      color: darkslategray;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center; }
 
 /*# sourceMappingURL=app.css.map */
